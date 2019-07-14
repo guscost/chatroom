@@ -14,7 +14,7 @@ export class User extends BaseEntity {
     @Column()
     name: string;
 
-    @Column()
+    @Column({ nullable: true })
     age: number;
 
     @OneToMany(type => Message, message => message.user)
