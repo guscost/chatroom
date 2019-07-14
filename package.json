@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "ts-node-dev src/index.ts",
-    "makemigrations": "ts-node ./node_modules/typeorm/cli.js migration:generate",
+    "makemigrations": "ts-node ./node_modules/typeorm/cli.js migration:generate -n Auto",
     "migrate": "ts-node ./node_modules/typeorm/cli.js migration:run"
   },
   "main": "index.js",
