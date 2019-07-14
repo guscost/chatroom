@@ -21,7 +21,9 @@
     "typeorm": "0.2.18"
   },
   "scripts": {
-    "start": "ts-node-dev src/index.ts"
+    "start": "ts-node-dev src/index.ts",
+    "makemigrations": "ts-node ./node_modules/typeorm/cli.js migration:generate",
+    "migrate": "ts-node ./node_modules/typeorm/cli.js migration:run"
   },
   "main": "index.js",
   "author": "",
